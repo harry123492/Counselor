@@ -75,15 +75,15 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         markerOptions.position(location);
         markerOptions2.position(location2);
-        markerOptions.position(location3);
-        markerOptions.position(location4);
-        markerOptions.position(location5);
-        markerOptions.position(location6);
-        markerOptions.position(location7);
-        markerOptions.position(location8);
-        markerOptions.position(location9);
-        markerOptions.position(location10);
-        markerOptions.position(location11);
+        markerOptions3.position(location3);
+        markerOptions4.position(location4);
+        markerOptions5.position(location5);
+        markerOptions6.position(location6);
+        markerOptions7.position(location7);
+        markerOptions8.position(location8);
+        markerOptions9.position(location9);
+        markerOptions10.position(location10);
+        markerOptions11.position(location11);
 
         googleMap.addMarker(markerOptions);
         googleMap.addMarker(markerOptions2);
