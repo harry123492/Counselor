@@ -4,14 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
 
     <fragment
         android:id="@+id/googleMap"
         class="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
         android:layout_height="230dp" />
-        <!-- 주석입니다. 지도 높이 수정했습니다. match_parent -> 230dp-->
+    <!-- 주석입니다. 지도 높이 수정했습니다. match_parent -> 230dp-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:menu="@menu/menu_bar" />
+
+
 
 </LinearLayout>
