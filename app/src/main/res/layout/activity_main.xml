@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     >
+
     <fragment
         android:id="@+id/googleMap"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         class="com.google.android.gms.maps.MapFragment"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="230dp" />
+        <!-- 주석입니다. 지도 높이 수정했습니다. match_parent -> 230dp-->
 
 </LinearLayout>
