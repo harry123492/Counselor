@@ -28,12 +28,18 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng location = new LatLng(35.190663, 128.077661);    // 진주
+        LatLng location = new LatLng(35.152832, 128.104106);// 경상대 정문
+        LatLng location2 = new LatLng(35.152411, 128.105758);//스타벅스
         MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.title("진주 지역");
-        markerOptions.snippet("진주 지역 한 가운데");
+        MarkerOptions markerOptions2 = new MarkerOptions();
+        markerOptions.title("경상대 정문");
+        markerOptions.snippet("우리화이팅합시당");
+        markerOptions2.title("경상대 스타벅스");
+        markerOptions2.snippet("자바칩프라푸치노");
         markerOptions.position(location);
+        markerOptions2.position(location2);
         googleMap.addMarker(markerOptions);
+        googleMap.addMarker(markerOptions2);
 
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 12));
     }
