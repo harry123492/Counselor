@@ -5,16 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.Manifest;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -36,12 +40,21 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private Casino casino;
     private SexualViolence sexualViolence;
 
+    double latitude;
+    double longitude;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // 현재 위치 권한 확인
+        Intent intent = getIntent();
+        latitude = intent.getDoubleExtra("latitude", 0);
+        longitude = intent.getDoubleExtra("longitude", 0);
+
 
         bottomNavigationView = findViewById(R.id.bottommenu);
         bottomNavigationView2 = findViewById(R.id.bottommenu2);
@@ -106,6 +119,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         fragmentManager = getFragmentManager();
         mapFragment = (MapFragment)fragmentManager.findFragmentById(R.id.googleMap);
+        // 여기에 fragment 를 이용해서 데이터를 전달해야 하는 것 같은데 막혔네요..
         mapFragment.getMapAsync(this);
     }
 
@@ -144,6 +158,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        //LatLng currentLocation = new LatLng(latitude, longitude);   // 현재 위치 추가
         LatLng location = new LatLng(35.1741235,128.0959079);// 경남금연지원센터
         LatLng location2 = new LatLng(35.1770869,128.0954964);//경남 서부 해바라기센터
         LatLng location3 = new LatLng(35.1646541,128.1270052);// 두드림 심리상담센터
@@ -155,6 +170,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         LatLng location9 = new LatLng(35.1878638,128.089226);// 진주 심리상담센터
         LatLng location10 = new LatLng(35.1741235,128.0959079);// 진주 중독관리 통합지원센터
         LatLng location11 = new LatLng(35.159548,128.1078828);// 톡톡 심리상담센터
+        //MarkerOptions currentMarkerOptions = new MarkerOptions();
         MarkerOptions markerOptions = new MarkerOptions();
         MarkerOptions markerOptions2 = new MarkerOptions();
         MarkerOptions markerOptions3 = new MarkerOptions();
@@ -166,6 +182,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         MarkerOptions markerOptions9 = new MarkerOptions();
         MarkerOptions markerOptions10 = new MarkerOptions();
         MarkerOptions markerOptions11 = new MarkerOptions();
+        //currentMarkerOptions.title("현재 위치");
         markerOptions.title("경남금연지원센터");
         markerOptions.snippet("경상남도진주시주약동407-9 2층");
         markerOptions2.title("경남 서부 해바라기센터");
@@ -189,6 +206,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         markerOptions11.title("톡톡 심리상담센터");
         markerOptions11.snippet("진주시동부로1 펄빌딩6층(개양오거리)");
 
+        //currentMarkerOptions.position(currentLocation);
         markerOptions.position(location);
         markerOptions2.position(location2);
         markerOptions3.position(location3);
@@ -201,6 +219,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         markerOptions10.position(location10);
         markerOptions11.position(location11);
 
+        //googleMap.addMarker(currentMarkerOptions);
         googleMap.addMarker(markerOptions);
         googleMap.addMarker(markerOptions2);
         googleMap.addMarker(markerOptions3);
@@ -215,5 +234,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 12));
     }
+
 }
 
