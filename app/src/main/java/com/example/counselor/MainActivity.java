@@ -8,6 +8,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -16,6 +18,9 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
     private FragmentManager fragmentManager;
@@ -30,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private SmokeFree smokeFree;
     private Casino casino;
     private SexualViolence sexualViolence;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +88,20 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 return true;
             }
         });
+
+        //list1 = (ListView)findViewById(R.id.list1);
+        //List<String> data = new ArrayList<>();
+        //ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, data);
+        //list1.setAdapter(adapter);
+        //data.add("박승규");
+        //data.add("김동현");
+        //data.add("이중길");
+        //data.add("전인혁");
+        //data.add("우리동네 카운슬러");
+        //adapter.notifyDataSetChanged();
+
+
+
 
 
         fragmentManager = getFragmentManager();
