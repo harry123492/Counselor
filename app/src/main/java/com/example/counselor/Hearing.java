@@ -42,5 +42,4 @@ public class Hearing extends Fragment {
 
         return view;
     }
-
 }
