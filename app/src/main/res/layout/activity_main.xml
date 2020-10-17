@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
 
     <fragment
@@ -36,9 +37,6 @@
         android:layout_height="match_parent">
 
     </FrameLayout>
-
-
     <!-- 주석입니다. 지도 높이 수정했습니다. match_parent -> 230dp-->
-
 
 </LinearLayout>
