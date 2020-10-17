@@ -14,22 +14,27 @@
         class="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
         android:layout_height="193dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottommenu"
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        app:itemIconTint="#000000"
-        app:itemTextColor="#000000"
-        app:menu="@menu/menu_bar" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottommenu"
+            android:layout_width="199dp"
+            android:layout_height="40dp"
+            app:itemIconTint="#000000"
+            app:itemTextColor="#000000"
+            app:menu="@menu/menu_bar" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottommenu2"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        app:itemIconTint="#000000"
-        app:itemTextColor="#000000"
-        app:menu="@menu/menu_bar2" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottommenu2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:itemIconTint="#000000"
+            app:itemTextColor="#000000"
+            app:menu="@menu/menu_bar2" />
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/main_frame"
