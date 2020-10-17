@@ -1,9 +1,13 @@
 package com.example.counselor;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.app.FragmentManager;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -11,20 +15,111 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
     private FragmentManager fragmentManager;
     private MapFragment mapFragment;
+    private BottomNavigationView bottomNavigationView;
+    private BottomNavigationView bottomNavigationView2;
+    private androidx.fragment.app.FragmentManager fm;
+    private FragmentTransaction ft;
+    private Youth youth;
+    private Hearing hearing;
+    private Family family;
+    private SmokeFree smokeFree;
+    private Casino casino;
+    private SexualViolence sexualViolence;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        bottomNavigationView = findViewById(R.id.bottommenu);
+        bottomNavigationView2 = findViewById(R.id.bottommenu2);
+
+        youth = new Youth();
+        hearing = new Hearing();
+        family = new Family();
+        smokeFree = new SmokeFree();
+        casino = new Casino();
+        sexualViolence = new SexualViolence();
+        setFrag(0);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch(menuItem.getItemId()){
+                    case R.id.action_accessible:
+                        setFrag(0);
+                        break;
+                    case R.id.action_family:
+                        setFrag(1);
+                        break;
+                    case R.id.action_build:
+                        setFrag(2);
+                        break;
+                }
+                return true;
+            }
+        });
+        bottomNavigationView2.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch(menuItem.getItemId()){
+                    case R.id.action_smokefree:
+                        setFrag(3);
+                        break;
+                    case R.id.action_casino:
+                        setFrag(4);
+                        break;
+                    case R.id.action_sexual_violence:
+                        setFrag(5);
+                        break;
+                }
+                return true;
+            }
+        });
+
+
         fragmentManager = getFragmentManager();
         mapFragment = (MapFragment)fragmentManager.findFragmentById(R.id.googleMap);
         mapFragment.getMapAsync(this);
     }
+
+    private void setFrag(int n){
+        fm = getSupportFragmentManager();
+        ft = fm.beginTransaction();
+        switch(n){
+            case 0:
+                ft.replace(R.id.main_frame, hearing);
+                ft.commit();
+                break;
+            case 1:
+                ft.replace(R.id.main_frame, family);
+                ft.commit();
+                break;
+            case 2:
+                ft.replace(R.id.main_frame, youth);
+                ft.commit();
+                break;
+            case 3:
+                ft.replace(R.id.main_frame, smokeFree);
+                ft.commit();
+                break;
+            case 4:
+                ft.replace(R.id.main_frame, casino);
+                ft.commit();
+                break;
+            case 5:
+                ft.replace(R.id.main_frame, sexualViolence);
+                ft.commit();
+                break;
+
+        }
+    }
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {

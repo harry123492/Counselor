@@ -12,17 +12,33 @@
         android:id="@+id/googleMap"
         class="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
-        android:layout_height="230dp" />
-    <!-- 주석입니다. 지도 높이 수정했습니다. match_parent -> 230dp-->
+        android:layout_height="193dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavi"
+        android:id="@+id/bottommenu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
         app:itemIconTint="#000000"
         app:itemTextColor="#000000"
         app:menu="@menu/menu_bar" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottommenu2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:menu="@menu/menu_bar2" />
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+    <!-- 주석입니다. 지도 높이 수정했습니다. match_parent -> 230dp-->
 
 
 </LinearLayout>

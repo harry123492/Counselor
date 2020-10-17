@@ -3,8 +3,8 @@
     <item
         android:id="@+id/action_accessible"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_favorite_24"
-        android:title="심리"/>
+        android:icon="@drawable/ic_baseline_accessibility_24"
+        android:title="심리" />
 
     <item
         android:id="@+id/action_family"
@@ -12,27 +12,26 @@
         android:icon="@drawable/ic_baseline_family_restroom_24"
         android:title="가정"/>
 
-    <!--<item
+    <item
         android:id="@+id/action_build"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_child_care_24"
-        android:title="아동·청소년"/> -->
+        android:title="아동·청소년"/>
+
+
+
+    <!--<item
+        android:id="@+id/chilren"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_child_care_24"
+        android:title="아동"/>
 
     <item
-        android:id="@+id/action_smokefree"
+        android:id="@+id/youth"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_smoke_free_24"
-        android:title="금연"/>
+        android:icon="@drawable/ic_baseline_accessibility_24"
+        android:title="청소년"/> -->
 
-    <item
-        android:id="@+id/action_drink"
-        android:enabled="true"
-        android:icon="@drawable/ic_baseline_casino_24"
-        android:title="중독"/>
 
-    <item
-        android:id="@+id/action_sexual_violence"
-        android:enabled="true"
-        android:icon="@drawable/ic_baseline_sports_kabaddi_24"
-        android:title="성폭력"/>
+
 </menu>
