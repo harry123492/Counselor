@@ -3,7 +3,7 @@
     <item
         android:id="@+id/action_accessible"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_accessibility_24"
+        android:icon="@drawable/ic_baseline_favorite_24"
         android:title="심리" />
 
     <item
