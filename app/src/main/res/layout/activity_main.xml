@@ -4,44 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity"
-    >
+    android:orientation="vertical">
 
-
+    <!-- 지도입니다-->
     <fragment
         android:id="@+id/googleMap"
         class="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
-        android:layout_height="193dp" />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="193dp"/>
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottommenu"
-            android:layout_width="199dp"
-            android:layout_height="40dp"
-            app:itemIconTint="#000000"
-            app:itemTextColor="#000000"
-            app:menu="@menu/menu_bar" />
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottommenu2"
+    <!-- 카테고리바 입니다. -->
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:itemIconTint="#000000"
-            app:itemTextColor="#000000"
-            app:menu="@menu/menu_bar2" />
-    </LinearLayout>
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottommenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                app:itemIconTint="#000000"
+                app:itemTextColor="#000000"
+                app:layout_constraintEnd_toStartOf="@id/bottommenu2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/menu_bar" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottommenu2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:itemIconTint="#000000"
+                app:itemTextColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@id/bottommenu"
+                app:menu="@menu/menu_bar2"
+                tools:layout_editor_absoluteY="0dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     <FrameLayout
         android:id="@+id/main_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </FrameLayout>
-    <!-- 주석입니다. 지도 높이 수정했습니다. match_parent -> 230dp-->
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
