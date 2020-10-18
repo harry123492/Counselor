@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
-
+<!--수정요망-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
                     android:id="@+id/place_1"
                     android:layout_width="71dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/dodream" />
+                    android:src="@drawable/logo_dodream" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -42,163 +42,15 @@
                         android:id="@+id/name_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="상담소명 : 두드림 심리상담센터"/>
+                        android:text="상담소명 : 두드림 심리상담센터"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
 
                     <TextView
                         android:id="@+id/content_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="• 전문영역: 가족상담, 개인상담, 부모교육, 아동상담"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/place_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/name_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="상담소명 : 카운슬러 상담소1"/>
-
-                    <TextView
-                        android:id="@+id/content_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="상담소 설명 - 우리모두 화이팅 합시당"/>
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/place_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/name_13"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="상담소명 : 카운슬러 상담소1"/>
-
-                    <TextView
-                        android:id="@+id/content_3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="상담소 설명 - 우리모두 화이팅 합시당"/>
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/place_4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/name_4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="상담소명 : 카운슬러 상담소1"/>
-
-                    <TextView
-                        android:id="@+id/content_4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="상담소 설명 - 우리모두 화이팅 합시당"/>
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:id="@+id/place_5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/name_5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="상담소명 : 카운슬러 상담소1"/>
-
-                    <TextView
-                        android:id="@+id/content_5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="상담소 설명 - 우리모두 화이팅 합시당"/>
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:id="@+id/place_6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/name_6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="상담소명 : 카운슬러 상담소1"/>
-
-                    <TextView
-                        android:id="@+id/content_6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="상담소 설명 - 우리모두 화이팅 합시당"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

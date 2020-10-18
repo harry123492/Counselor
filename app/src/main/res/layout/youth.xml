@@ -27,7 +27,7 @@
                     android:id="@+id/place_1"
                     android:layout_width="71dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/dodream" />
+                    android:src="@drawable/logo_dodream" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                     android:id="@+id/place_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@drawable/logo_misoin"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -91,7 +91,7 @@
                     android:id="@+id/place_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@drawable/logo_inmusic"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -123,7 +123,7 @@
                     android:id="@+id/place_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@drawable/logo_gungang"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -154,7 +154,7 @@
                     android:id="@+id/place_5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@drawable/logo_wee"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -185,7 +185,7 @@
                     android:id="@+id/place_6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@drawable/logo_jinjusimri"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -216,7 +216,7 @@
                     android:id="@+id/place_7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@drawable/logo_talktalk"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
