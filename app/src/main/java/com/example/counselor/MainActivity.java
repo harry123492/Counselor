@@ -2,6 +2,7 @@ package com.example.counselor;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -10,7 +11,10 @@ import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -40,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private Casino casino;
     private SexualViolence sexualViolence;
 
+
     double latitude;
     double longitude;
 
@@ -49,6 +54,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         // 현재 위치 권한 확인
         /*문제점:
@@ -76,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
                 switch(menuItem.getItemId()){
                     case R.id.action_accessible:
                         setFrag(0);
@@ -112,7 +120,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
 
-
         fragmentManager = getFragmentManager();
         mapFragment = (MapFragment)fragmentManager.findFragmentById(R.id.googleMap);
         // 여기에 fragment 를 이용해서 데이터를 전달해야 하는 것 같은데 막혔네요..
@@ -122,6 +129,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private void setFrag(int n){
         fm = getSupportFragmentManager();
         ft = fm.beginTransaction();
+
+
         switch(n){
             case 0:
                 ft.replace(R.id.main_frame, hearing);
