@@ -48,7 +48,7 @@
                         android:id="@+id/content_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="상담소 설명 - 우리모두 화이팅 합시당"/>
+                        android:text="• 전문영역: 가족상담, 개인상담, 부모교육, 아동상담"/>
 
                 </LinearLayout>
 

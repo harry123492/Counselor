@@ -17,14 +17,17 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <LinearLayout
+                android:id="@+id/dodream"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:clickable="true">
+
                 <ImageView
                     android:id="@+id/place_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:layout_width="71dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/dodream" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -36,16 +39,16 @@
                         android:id="@+id/name_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="두드림 심리상담센터"
-                        android:textSize="20sp"
-                        android:textStyle="bold"/>
+                        android:text="상담소명 : 두드림 심리상담센터"/>
 
                     <TextView
                         android:id="@+id/content_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="• 전문영역: 가족상담, 개인상담, 부모교육, 아동상담"/>
+
                 </LinearLayout>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
