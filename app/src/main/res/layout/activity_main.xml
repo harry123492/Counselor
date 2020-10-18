@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="193dp"/>
 
-    <!-- 카테고리바 입니다. -->
+    <!-- 카테고리바 입니다 -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
