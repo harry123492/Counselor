@@ -16,7 +16,7 @@
         android:id="@+id/action_build"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_child_care_24"
-        android:title="아동·청소년"/>
+        android:title="청소년"/>
 
 
 
