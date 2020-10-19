@@ -15,6 +15,7 @@ public class Family extends Fragment {
 
     private View view;
     private LinearLayout dodream;
+    private LinearLayout sunflower;
 
     @Nullable
     @Override
@@ -38,6 +39,28 @@ public class Family extends Fragment {
 
             }
         });
+
+
+        sunflower = view.findViewById(R.id.sunflower);
+
+        sunflower.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("fromMenu", "메뉴");
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                Sunflower sunflower = new Sunflower();
+                sunflower.setArguments(bundle);
+                transaction.replace(R.id.main_frame, sunflower);
+                transaction.commit();
+
+
+
+
+            }
+        });
+
 
         return view;
     }
