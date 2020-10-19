@@ -4,39 +4,42 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-public class SmokeFree extends Fragment {
+public class Smoke extends Fragment {
 
     private View view;
-    private LinearLayout smoke;
+    private Button button;
+    private String result;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.smokefree, container, false);
+        view = inflater.inflate(R.layout.smoke, container, false);
 
+        button = view.findViewById(R.id.menu_return);
 
-        smoke = view.findViewById(R.id.smoke);
+        if(getArguments() != null){
+            result = getArguments().getString("fromMenu");
 
-        smoke.setOnClickListener(new View.OnClickListener() {
+        }
+
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = new Bundle();
-                bundle.putString("fromMenu", "메뉴");
+                Bundle bundle = new Bundle(); // 무언가를 담을 준비를 할 수 있는 보따리
+                bundle.putString("fromdodream", "경남금연");
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
 
-                Smoke smoke = new Smoke();
-                smoke.setArguments(bundle);
-                transaction.replace(R.id.main_frame, smoke);
+                Hearing hearing = new Hearing();
+                hearing.setArguments(bundle);
+                transaction.replace(R.id.main_frame, hearing);
                 transaction.commit();
-
-
 
 
             }
@@ -44,4 +47,6 @@ public class SmokeFree extends Fragment {
 
         return view;
     }
+
+
 }
