@@ -16,6 +16,11 @@ public class Family extends Fragment {
     private View view;
     private LinearLayout dodream;
     private LinearLayout sunflower;
+    private LinearLayout miso;
+    private LinearLayout seed;
+    private LinearLayout inmusic;
+    private LinearLayout jinjufamily;
+    private LinearLayout jinju;
 
     @Nullable
     @Override
@@ -60,6 +65,113 @@ public class Family extends Fragment {
 
             }
         });
+
+
+        miso = view.findViewById(R.id.miso);
+
+        miso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("fromMenu", "메뉴");
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                Miso miso = new Miso();
+                miso.setArguments(bundle);
+                transaction.replace(R.id.main_frame, miso);
+                transaction.commit();
+
+
+
+
+            }
+        });
+
+
+        seed = view.findViewById(R.id.seed);
+
+        seed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("fromMenu", "메뉴");
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                Seed seed = new Seed();
+                seed.setArguments(bundle);
+                transaction.replace(R.id.main_frame, seed);
+                transaction.commit();
+
+
+
+
+            }
+        });
+
+
+        inmusic = view.findViewById(R.id.inmusic);
+
+        inmusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("fromMenu", "메뉴");
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                InMusic inMusic = new InMusic();
+                inMusic.setArguments(bundle);
+                transaction.replace(R.id.main_frame, inMusic);
+                transaction.commit();
+
+
+
+
+            }
+        });
+
+
+        jinjufamily = view.findViewById(R.id.jinjufamily);
+
+        jinjufamily.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("fromMenu", "메뉴");
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                JinjuFamily jinjuFamily = new JinjuFamily();
+                jinjuFamily.setArguments(bundle);
+                transaction.replace(R.id.main_frame, jinjuFamily);
+                transaction.commit();
+
+
+
+
+            }
+        });
+
+
+
+        jinju = view.findViewById(R.id.jinju);
+
+        jinju.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("fromMenu", "메뉴");
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                Jinju jinju = new Jinju();
+                jinju.setArguments(bundle);
+                transaction.replace(R.id.main_frame, jinju);
+                transaction.commit();
+
+
+
+
+            }
+        });
+
 
 
         return view;

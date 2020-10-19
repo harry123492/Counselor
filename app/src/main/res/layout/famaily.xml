@@ -84,6 +84,7 @@
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/miso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -116,6 +117,7 @@
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/seed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -147,7 +149,9 @@
                         android:text="• 전문영역: 부부가족상담, 개인상담"/>
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
+                android:id="@+id/inmusic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -178,7 +182,9 @@
                         android:text="• 전문영역: 아동 및 청소년상담, 개인상담, 부부상담"/>
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
+                android:id="@+id/jinjufamily"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -209,7 +215,9 @@
                         android:text="• 전문영역: 가족상담, 부부상담, 부모-자녀상담, 한부모자녀상담"/>
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
+                android:id="@+id/jinju"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
