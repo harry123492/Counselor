@@ -55,5 +55,4 @@
             android:src="@drawable/backlogofull"/>
         <!--워터마크(?) 추가-->
     </FrameLayout>
-
 </LinearLayout>
