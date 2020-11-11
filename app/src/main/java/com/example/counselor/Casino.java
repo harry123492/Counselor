@@ -32,7 +32,7 @@ public class Casino extends Fragment {
 
                 Addiction addiction = new Addiction();
                 addiction.setArguments(bundle);
-                transaction.replace(R.id.main_frame, addiction);
+                transaction.replace(R.id.aaaaa, addiction);
                 transaction.commit();
 
 

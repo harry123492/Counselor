@@ -34,7 +34,7 @@ public class SexualViolence extends Fragment {
 
                 Sunflower sunflower = new Sunflower();
                 sunflower.setArguments(bundle);
-                transaction.replace(R.id.main_frame, sunflower);
+                transaction.replace(R.id.aaaaa, sunflower);
                 transaction.commit();
 
 
@@ -55,7 +55,7 @@ public class SexualViolence extends Fragment {
 
                 Miso miso = new Miso();
                 miso.setArguments(bundle);
-                transaction.replace(R.id.main_frame, miso);
+                transaction.replace(R.id.aaaaa, miso);
                 transaction.commit();
 
 

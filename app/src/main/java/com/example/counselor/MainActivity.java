@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapFragment = (MapFragment)fragmentManager.findFragmentById(R.id.googleMap);
         // 여기에 fragment 를 이용해서 데이터를 전달해야 하는 것 같은데 막혔네요..
         mapFragment.getMapAsync(this);
+
     }
 
     private void setFrag(int n){
@@ -120,27 +121,27 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         switch(n){
             case 0:
-                ft.replace(R.id.main_frame, hearing);
+                ft.replace(R.id.aaaaa, hearing);
                 ft.commit();
                 break;
             case 1:
-                ft.replace(R.id.main_frame, family);
+                ft.replace(R.id.aaaaa, family);
                 ft.commit();
                 break;
             case 2:
-                ft.replace(R.id.main_frame, youth);
+                ft.replace(R.id.aaaaa, youth);
                 ft.commit();
                 break;
             case 3:
-                ft.replace(R.id.main_frame, smokeFree);
+                ft.replace(R.id.aaaaa, smokeFree);
                 ft.commit();
                 break;
             case 4:
-                ft.replace(R.id.main_frame, casino);
+                ft.replace(R.id.aaaaa, casino);
                 ft.commit();
                 break;
             case 5:
-                ft.replace(R.id.main_frame, sexualViolence);
+                ft.replace(R.id.aaaaa, sexualViolence);
                 ft.commit();
                 break;
 

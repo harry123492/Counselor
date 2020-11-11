@@ -33,7 +33,7 @@ public class SmokeFree extends Fragment {
 
                 Smoke smoke = new Smoke();
                 smoke.setArguments(bundle);
-                transaction.replace(R.id.main_frame, smoke);
+                transaction.replace(R.id.aaaaa, smoke);
                 transaction.commit();
 
 

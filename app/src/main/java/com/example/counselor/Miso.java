@@ -38,7 +38,7 @@ public class Miso extends Fragment {
 
                 Hearing hearing = new Hearing();
                 hearing.setArguments(bundle);
-                transaction.replace(R.id.main_frame, hearing);
+                transaction.replace(R.id.aaaaa, hearing);
                 transaction.commit();
 
 

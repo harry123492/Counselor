@@ -39,7 +39,7 @@ public class Youth extends Fragment {
 
                 Dodream dodream = new Dodream();
                 dodream.setArguments(bundle);
-                transaction.replace(R.id.main_frame, dodream);
+                transaction.replace(R.id.aaaaa, dodream);
                 transaction.commit();
 
 
@@ -58,7 +58,7 @@ public class Youth extends Fragment {
 
                 Miso miso = new Miso();
                 miso.setArguments(bundle);
-                transaction.replace(R.id.main_frame, miso);
+                transaction.replace(R.id.aaaaa, miso);
                 transaction.commit();
 
 
@@ -79,7 +79,7 @@ public class Youth extends Fragment {
 
                 InMusic inMusic = new InMusic();
                 inMusic.setArguments(bundle);
-                transaction.replace(R.id.main_frame, inMusic);
+                transaction.replace(R.id.aaaaa, inMusic);
                 transaction.commit();
 
 
@@ -100,7 +100,7 @@ public class Youth extends Fragment {
 
                 JinjuFamily jinjuFamily = new JinjuFamily();
                 jinjuFamily.setArguments(bundle);
-                transaction.replace(R.id.main_frame, jinjuFamily);
+                transaction.replace(R.id.aaaaa, jinjuFamily);
                 transaction.commit();
 
 
@@ -121,7 +121,7 @@ public class Youth extends Fragment {
 
                 Wee wee = new Wee();
                 wee.setArguments(bundle);
-                transaction.replace(R.id.main_frame, wee);
+                transaction.replace(R.id.aaaaa, wee);
                 transaction.commit();
 
 
@@ -142,7 +142,7 @@ public class Youth extends Fragment {
 
                 Jinju jinju = new Jinju();
                 jinju.setArguments(bundle);
-                transaction.replace(R.id.main_frame, jinju);
+                transaction.replace(R.id.aaaaa, jinju);
                 transaction.commit();
 
 
@@ -163,7 +163,7 @@ public class Youth extends Fragment {
 
                 Toktok toktok = new Toktok();
                 toktok.setArguments(bundle);
-                transaction.replace(R.id.main_frame, toktok);
+                transaction.replace(R.id.aaaaa, toktok);
                 transaction.commit();
 
 

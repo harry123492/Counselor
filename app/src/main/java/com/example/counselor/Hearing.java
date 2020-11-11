@@ -39,7 +39,7 @@ public class Hearing extends Fragment {
 
                 Dodream dodream = new Dodream();
                 dodream.setArguments(bundle);
-                transaction.replace(R.id.main_frame, dodream);
+                transaction.replace(R.id.aaaaa, dodream);
                 transaction.commit();
 
 
@@ -59,7 +59,7 @@ public class Hearing extends Fragment {
 
                 Sunflower sunflower = new Sunflower();
                 sunflower.setArguments(bundle);
-                transaction.replace(R.id.main_frame, sunflower);
+                transaction.replace(R.id.aaaaa, sunflower);
                 transaction.commit();
 
 
@@ -80,7 +80,7 @@ public class Hearing extends Fragment {
 
                 Miso miso = new Miso();
                 miso.setArguments(bundle);
-                transaction.replace(R.id.main_frame, miso);
+                transaction.replace(R.id.aaaaa, miso);
                 transaction.commit();
 
 
@@ -101,7 +101,7 @@ public class Hearing extends Fragment {
 
                 Jinju jinju = new Jinju();
                 jinju.setArguments(bundle);
-                transaction.replace(R.id.main_frame, jinju);
+                transaction.replace(R.id.aaaaa, jinju);
                 transaction.commit();
 
 
@@ -122,7 +122,7 @@ public class Hearing extends Fragment {
 
                 Toktok toktok = new Toktok();
                 toktok.setArguments(bundle);
-                transaction.replace(R.id.main_frame, toktok);
+                transaction.replace(R.id.aaaaa, toktok);
                 transaction.commit();
 
 
