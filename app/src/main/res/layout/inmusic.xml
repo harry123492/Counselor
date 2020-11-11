@@ -7,11 +7,19 @@
     android:background="#ffffff">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="인음악 심리상담센터"
-        android:textSize="30sp"/>
+    <LinearLayout
+        android:id="@+id/dodream"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/place_1"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_dodream" />
+    </LinearLayout>
 
         <Button
             android:id="@+id/menu_return"
