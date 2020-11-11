@@ -20,6 +20,7 @@ public class Loading extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(Loading.this, MainActivity.class));
+                finish();
             }
         };
         //3sec
