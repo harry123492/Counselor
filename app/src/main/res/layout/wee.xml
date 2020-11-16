@@ -6,17 +6,144 @@
     android:orientation="vertical"
     android:background="#ffffff">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WEE 센터"
-        android:textSize="30sp"/>
+            <LinearLayout
+                android:id="@+id/addiction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/menu_return"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="돌아가기"
-            android:textSize="30sp"/>
+                <ImageView
+                    android:id="@+id/place_1"
+                    android:layout_width="172dp"
+                    android:layout_height="179dp"
+                    android:src="@drawable/logo_wee" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="244dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="241dp"
+                        android:layout_height="167dp"
+                        android:src="@drawable/wee_map" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="상담실주소: 진주시비봉로23번길8 (중안동) 진주교육지원청4층Wee센터"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="상담소 소개" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="진주교육지원청Wee센터는 학생들의 즐거운 학교생활에 도움을 주기위하여 교육과학기술부가 설립하고 진주교육지원청이 운영하는 학생상담센터입니다. 학교생활에 어려움이나 위기를 겪고있는 학생들에게 ‘진단-상담-치료’의 ONE –STOP 지원서비스를 제공하고 있습니다. 전문상담교사, 임상심리사, 전문상담사, 사회복지사가 한팀을 이루어 심리평가, 상담, 사회복지서비스를 제공하여도움이 필요한 학생에게 통합적서비스를 지원하고 있으며, 학부모와 교사에게 청소년대상 상담 및 사회복지에 대한 자문활동을 지원합니다." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="구성원"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="전문상담교사1명 전문상담교사(중등) 2명 전문상담교사(초등) 1명  \n임상심리사1명, 전문상담사3명, 사회복지사1명" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="전문영역 및 상담 프로그램" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="- 전문영역: 청소년상담, 학부모상담
+\n- 프로그램:학교폭력특별교육, 학급단위예방교육및집단상담, 찾아가는상담체험, 학부모집단상담, 학업중단숙려제, 가족관계증진, 학교적응력향상, 멘토링등" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="가능한 심리검사" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="MMPI-2, MMPI-A, PAI, PAI-A, CATi, MBTI, CBCL 6-18, YSR, TRF, 홀랜드진로발달검사, 홀랜드진로탐색검사II, MLST, BGT, 사회성숙도검사,
+K-WISC-Ⅳ, K-WAIS-Ⅳ, K-CAT, TAT, 로샤검사, HTP&amp;KFD, SCT,
+K-BDI-2, K-BAI,  부모양육태도검사
+" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/menu_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="돌아가기"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
