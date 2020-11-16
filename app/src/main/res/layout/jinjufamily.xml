@@ -7,16 +7,118 @@
     android:background="#ffffff">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="진주시 건강가정 지원센터"
-        android:textSize="30sp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/menu_return"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="돌아가기"
-            android:textSize="30sp"/>
+            <LinearLayout
+                android:id="@+id/jinjufamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/place_1"
+                    android:layout_width="172dp"
+                    android:layout_height="118dp"
+                    android:layout_marginTop="46dp"
+                    android:src="@drawable/logo_gungang" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="244dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="241dp"
+                        android:layout_height="167dp"
+                        android:src="@drawable/gungangmap" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="상담실주소: 경상남도진주시진양호로305" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="상담소 소개" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=" 진주시 건강가정 지원센터에서는 개인 및 가족이 겪을 수 있는 다양한 문제를 예방하고 해결하기 위한 각종 교육과 상담 및 가족문화 돌봄, 지역사회 연계 등 다양한 프로그램을 진행하여 지역사회와 이웃사랑 나눔을 함께 하기 위해 다양한 서비스를 제공하고 있습니다. 우리사회의 심각한 가족해체의 문제, 한부모 가정, 조손가정 등 약화되어가고 있는 가족기능을 회복시키기 위하여 욕구가 충족되어지고 많은 참여가 이루어 질 수 있도록 열과 성을 다하여 노력하겠으며, 친절한 미소로서 다시 찾는 센터가 될 것을 약속드립니다." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="전문영역 및 상담 프로그램" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="-전문영역: 가족상담, 부부상담, 부모-자녀상담, 한부모자녀상담\n-프로그램: 가족돌봄나눔(아이돌봄서비스), 가족교육\n (부모교육,아버지교육), 가족상담, 가족문화프로그램, \n 다양한가족통합지원, 지역사회연계, 예비부모교육" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="조직도" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="255dp"
+                    android:src="@drawable/gungangorg"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/menu_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="돌아가기"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

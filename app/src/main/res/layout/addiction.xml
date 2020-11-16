@@ -6,17 +6,140 @@
     android:orientation="vertical"
     android:background="#ffffff">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="진주 중독관리 지원센터"
-        android:textSize="30sp"/>
+            <LinearLayout
+                android:id="@+id/addiction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/menu_return"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="돌아가기"
-            android:textSize="30sp"/>
+                <ImageView
+                    android:id="@+id/place_1"
+                    android:layout_width="172dp"
+                    android:layout_height="179dp"
+                    android:src="@drawable/logo_casino1" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="244dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="241dp"
+                        android:layout_height="167dp"
+                        android:src="@drawable/jinjuaddictionmap" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="상담실주소: 진주시주약동407-9" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="상담소 소개" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=" 진주 중독자 관리 통합 지원센터는 중독자 및 그 가족, 지역주민에게 중독에 대한 예방, 홍보, 교육과 체계적이고 전문적인 치료, 재활서비스를 제공함으로써 중독자 의사회복귀를 촉진하는 것을 목적으로 하고 있습니다. 알코올 중독 및 기타중독에 대한 정보제공, 예방교육 및 홍보, 중독의 조기발견 및 조기치료유도, 지역사회에서의 여성 및 청소년 중독문제, 산업장에서의 고용인의 중독문제, 중독으로 인한 폐해예방 교육 및 홍보, 중독으로 인해 발생한 역기능, 중독자가정의 자녀 및 배우자의 회복상담을 하고 있습니다." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="상담안내"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="일시: 월요일~ 금요일/ 오전9시~ 오후6시\n대상: 중독문제로도움이필요한본인또는가족, 지역주민\n방법: 전화상담, 내소상담, 홈페이지상담\n이용료: 무료" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="전문영역 및 상담 프로그램" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="전문영역: 중독상담\n프로그램:중독 조기발견 및 개입서비스, 중독질환 관리 사업, 중독질환 가족지원사업, 중독질환 예방 및 교육사업, 지역진단 및 기획" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="가능한 심리검사" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="자가진단-AUDIT, K-2(성인, 아동, 청소년), DAST, PGSI" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/menu_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="돌아가기"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

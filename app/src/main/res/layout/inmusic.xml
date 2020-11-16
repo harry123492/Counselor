@@ -7,24 +7,140 @@
     android:background="#ffffff">
 
 
-    <LinearLayout
-        android:id="@+id/dodream"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="148dp"
-        android:clickable="true"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/place_1"
-            android:layout_width="174dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/logo_dodream" />
-    </LinearLayout>
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/menu_return"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="돌아가기"
-            android:textSize="30sp"/>
+            <LinearLayout
+                android:id="@+id/inmusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/place_1"
+                    android:layout_width="172dp"
+                    android:layout_height="179dp"
+                    android:layout_marginTop="34dp"
+                    android:src="@drawable/logo_inmusic" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="244dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="241dp"
+                        android:layout_height="167dp"
+                        android:src="@drawable/inmusicmap" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="상담실주소: 진주시평거로26번길5-12\n                      (바른몸운동센터앞)" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="상담소 소개" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=" 인음악 심리상담센터는 정서초점 상담을 주이론적 배경으로 심리상담 및 상담교육전문기관입니다. 현재는 아동 청소년 학교부적응, 또래관계, 부부관계, 부모-자녀관계, 대인관계문제 및 조화로운 인간관계를 해결하고 싶은 내담자를 돕는데 집중하고 있습니다. " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="상담자소개"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="- 상담학석사졸업\n- 진주시보건소 정신겅강복지센터 건강증진과 음악치료 프로그램 진행\n- 음악치료사1급 (한국음악치료사협회)\n- 사회복지사2급 (보건복지가족부)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="전문영역 및 상담 프로그램" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="-전문영역: 아동 및 청소년상담, 개인상담, 부부상담\n-프로그램: 지역사회 서비스 투자사업\n(아동청소년 심리지원 서비스, 아동청소년 인터넷과몰입, \n아동청소년 비전형성 서비스, 정신건강 토탈케어 서비스, \n근로자 통합서비스), \n부모교육, 모래놀이 자격과정운영, 미술치료자격과정진행, \n진주시 보건소 정신건강복지센터 연계 지역아동센터 아동청소년 자존감 향상 집단상담 프로그램 진행" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="가능한 심리검사" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="MMPI-2, PAI, 한국판펜스테이트(PSWQ),조기정신검사(ESI), HTP" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/menu_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="돌아가기"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
