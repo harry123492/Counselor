@@ -32,28 +32,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private SexualViolence sexualViolence;
 
 
-    double latitude;
-    double longitude;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
-        // 현재 위치 권한 확인
-        /*문제점:
-        권한 확인이 안 뜬다
-            - 위치가 꺼져 있어도 안 뜸..!
-        지도에 표시가 안 된다
-         */
-        Intent intent = getIntent();
-        // getIntent 로 latitude 와 longitude 값을 가져온다.
-        latitude = intent.getDoubleExtra("latitude", 0);
-        longitude = intent.getDoubleExtra("longitude", 0);
 
 
         bottomNavigationView = findViewById(R.id.bottommenu);
@@ -104,14 +86,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         });
 
 
-
-
-
         fragmentManager = getFragmentManager();
         mapFragment = (MapFragment)fragmentManager.findFragmentById(R.id.googleMap);
-        // 여기에 fragment 를 이용해서 데이터를 전달해야 하는 것 같은데 막혔네요..
         mapFragment.getMapAsync(this);
-
     }
 
     private void setFrag(int n){
