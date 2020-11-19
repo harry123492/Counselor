@@ -8,6 +8,11 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     >
+    <Button
+        android:id="@+id/call_Jinju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화걸기임시버튼" />
     <!-- 지도입니다-->
     <fragment
         android:id="@+id/googleMap"
