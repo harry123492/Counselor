@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ScrollView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private MapFragment mapFragment;
     private BottomNavigationView bottomNavigationView;
     private BottomNavigationView bottomNavigationView2;
+    private BottomNavigationView infoView;
     private androidx.fragment.app.FragmentManager fm;
     private FragmentTransaction ft;
     private Youth youth;
@@ -37,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private SexualViolence sexualViolence;
     Button call_Jinju;
     Dialog mDialog;
+
+    double latitude;
+    double longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,8 +58,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             }
         });
+
         bottomNavigationView = findViewById(R.id.bottommenu);
         bottomNavigationView2 = findViewById(R.id.bottommenu2);
+        infoView = findViewById(R.id.info_bar);
 
         youth = new Youth();
         hearing = new Hearing();

@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#00BB00</item> <!-- 액션바 배경색 변경-->
         <item name="colorPrimaryDark">#000000</item> <!-- 상단바 배경색 변경-->
