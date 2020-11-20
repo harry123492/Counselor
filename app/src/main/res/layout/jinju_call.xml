@@ -42,7 +42,7 @@
         android:layout_marginTop="18dp"
         android:layout_below="@+id/jinjunum"/>
     <Button
-        android:id="@+id/call_btn"
+        android:id="@+id/jinjucall_btn"
         android:text="전화하기"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
@@ -54,7 +54,7 @@
         android:layout_marginBottom="5dp"
         android:background="@drawable/buttonshape"/>
     <Button
-        android:id="@+id/cancel_btn"
+        android:id="@+id/jinjucancel_btn"
         android:text="닫기"
         android:textColor="#000"
         android:textSize="12sp"

@@ -46,24 +46,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private SmokeFree smokeFree;
     private Casino casino;
     private SexualViolence sexualViolence;
-    Button call_Jinju;
-    Dialog mDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        call_Jinju = findViewById(R.id.call_Jinju);
-        mDialog = new Dialog(this);
-
-        call_Jinju.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                mDialog.setContentView(R.layout.jinju_call);
-
-                mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            }
-        });
 
         bottomNavigationView = findViewById(R.id.bottommenu);
         bottomNavigationView2 = findViewById(R.id.bottommenu2);
