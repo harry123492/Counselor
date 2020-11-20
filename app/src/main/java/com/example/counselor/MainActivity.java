@@ -1,12 +1,18 @@
 package com.example.counselor;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.Manifest;
 import android.app.Dialog;
 import android.app.FragmentManager;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -14,6 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -26,6 +33,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
     private FragmentManager fragmentManager;
     private MapFragment mapFragment;
+    private GoogleMap googleMap;    // 현재위치 추가
+
     private BottomNavigationView bottomNavigationView;
     private BottomNavigationView bottomNavigationView2;
     private BottomNavigationView infoView;
@@ -39,9 +48,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private SexualViolence sexualViolence;
     Button call_Jinju;
     Dialog mDialog;
-
-    double latitude;
-    double longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
-                switch(menuItem.getItemId()){
+                switch (menuItem.getItemId()) {
                     case R.id.action_accessible:
                         setFrag(0);
                         break;
@@ -92,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         bottomNavigationView2.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch(menuItem.getItemId()){
+                switch (menuItem.getItemId()) {
                     case R.id.action_smokefree:
                         setFrag(3);
                         break;
@@ -109,16 +115,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         fragmentManager = getFragmentManager();
-        mapFragment = (MapFragment)fragmentManager.findFragmentById(R.id.googleMap);
+        mapFragment = (MapFragment) fragmentManager.findFragmentById(R.id.googleMap);
         mapFragment.getMapAsync(this);
     }
 
-    private void setFrag(int n){
+    private void setFrag(int n) {
         fm = getSupportFragmentManager();
         ft = fm.beginTransaction();
 
 
-        switch(n){
+        switch (n) {
             case 0:
                 ft.replace(R.id.aaaaa, hearing);
                 ft.commit();
@@ -150,19 +156,18 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        //LatLng currentLocation = new LatLng(latitude, longitude);   // 현재 위치 추가
-        LatLng location = new LatLng(35.1741235,128.0959079);// 경남금연지원센터
-        LatLng location2 = new LatLng(35.1770869,128.0954964);//경남 서부 해바라기센터
-        LatLng location3 = new LatLng(35.1646541,128.1270052);// 두드림 심리상담센터
-        LatLng location4 = new LatLng(35.183285,128.0675139);// 미소인 상담센터
-        LatLng location5 = new LatLng(35.1549441,128.1092256);// 씨앗과 나무
-        LatLng location6 = new LatLng(35.1730956,128.065032);// 인음악 심리상담센터
-        LatLng location7 = new LatLng(35.1805242,128.0653256);// 진주시 건강가정 지원센터
-        LatLng location8 = new LatLng(35.1931537,128.0796727);// 진주 교육지원청 Wee센터
-        LatLng location9 = new LatLng(35.1878638,128.089226);// 진주 심리상담센터
-        LatLng location10 = new LatLng(35.1741235,128.0959079);// 진주 중독관리 통합지원센터
-        LatLng location11 = new LatLng(35.159548,128.1078828);// 톡톡 심리상담센터
-        //MarkerOptions currentMarkerOptions = new MarkerOptions();
+        LatLng location = new LatLng(35.1741235, 128.0959079);// 경남금연지원센터
+        LatLng location2 = new LatLng(35.1770869, 128.0954964);//경남 서부 해바라기센터
+        LatLng location3 = new LatLng(35.1646541, 128.1270052);// 두드림 심리상담센터
+        LatLng location4 = new LatLng(35.183285, 128.0675139);// 미소인 상담센터
+        LatLng location5 = new LatLng(35.1549441, 128.1092256);// 씨앗과 나무
+        LatLng location6 = new LatLng(35.1730956, 128.065032);// 인음악 심리상담센터
+        LatLng location7 = new LatLng(35.1805242, 128.0653256);// 진주시 건강가정 지원센터
+        LatLng location8 = new LatLng(35.1931537, 128.0796727);// 진주 교육지원청 Wee센터
+        LatLng location9 = new LatLng(35.1878638, 128.089226);// 진주 심리상담센터
+        LatLng location10 = new LatLng(35.1741235, 128.0959079);// 진주 중독관리 통합지원센터
+        LatLng location11 = new LatLng(35.159548, 128.1078828);// 톡톡 심리상담센터
+
         MarkerOptions markerOptions = new MarkerOptions();
         MarkerOptions markerOptions2 = new MarkerOptions();
         MarkerOptions markerOptions3 = new MarkerOptions();
@@ -174,7 +179,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         MarkerOptions markerOptions9 = new MarkerOptions();
         MarkerOptions markerOptions10 = new MarkerOptions();
         MarkerOptions markerOptions11 = new MarkerOptions();
-        //currentMarkerOptions.title("현재 위치");
+
         markerOptions.title("경남금연지원센터");
         markerOptions.snippet("경상남도진주시주약동407-9 2층");
         markerOptions2.title("경남 서부 해바라기센터");
@@ -198,7 +203,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         markerOptions11.title("톡톡 심리상담센터");
         markerOptions11.snippet("진주시동부로1 펄빌딩6층(개양오거리)");
 
-        //currentMarkerOptions.position(currentLocation);
         markerOptions.position(location);
         markerOptions2.position(location2);
         markerOptions3.position(location3);
@@ -211,7 +215,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         markerOptions10.position(location10);
         markerOptions11.position(location11);
 
-        //googleMap.addMarker(currentMarkerOptions);
         googleMap.addMarker(markerOptions);
         googleMap.addMarker(markerOptions2);
         googleMap.addMarker(markerOptions3);
@@ -225,6 +228,49 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         googleMap.addMarker(markerOptions11);
 
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 12));
+
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            googleMap.setMyLocationEnabled(true);
+        } else {
+            checkLocationPermissionWithRationale();
+        }
+
+    }
+    public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
+
+    private void checkLocationPermissionWithRationale() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)) {
+                new AlertDialog.Builder(this)
+                        .setTitle("위치정보")
+                        .setMessage("이 앱을 사용하기 위해서는 위치정보에 접근이 필요합니다. 위치정보 접근을 허용하여 주세요.")
+                        .setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                ActivityCompat.requestPermissions(MainActivity.this, new String[]{
+                                        Manifest.permission.ACCESS_FINE_LOCATION
+                                }, MY_PERMISSIONS_REQUEST_LOCATION);
+                            }
+                        }).create().show();
+            } else {
+                ActivityCompat.requestPermissions(this, new String[]{
+                        Manifest.permission.ACCESS_FINE_LOCATION
+                }, MY_PERMISSIONS_REQUEST_LOCATION);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        if (requestCode == MY_PERMISSIONS_REQUEST_LOCATION) {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                        googleMap.setMyLocationEnabled(true);
+                    }
+                } else {
+                    Toast.makeText(this, "permission denied", Toast.LENGTH_LONG).show();
+                }
+        }
     }
 
 }
