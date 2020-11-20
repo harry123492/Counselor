@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:background="@drawable/calldialogshape">
+    <ImageView
+        android:id="@+id/addictioncallimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/logo_casino1"/>
+    <TextView
+        android:id="@+id/addictioncallname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진주 중독관리 통합지원센터"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/addictioncallimg"/>
+    <TextView
+        android:id="@+id/addictionnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호 : 055-758-7801"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/addictioncallname"/>
+    <TextView
+        android:id="@+id/addictionemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일 : jinjuacc@hanmail.net"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/addictionnum"/>
+    <Button
+        android:id="@+id/addictioncall_btn"
+        android:text="전화하기"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addictionemail"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttonshape"/>
+    <Button
+        android:id="@+id/addictioncancel_btn"
+        android:text="닫기"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addictionemail"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cancelbuttonshape"/>
+</RelativeLayout>
