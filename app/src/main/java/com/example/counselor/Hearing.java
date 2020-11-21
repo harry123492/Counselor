@@ -12,25 +12,50 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
+/*<h1>심리상담 탭에 상담실 추가</h1>
+*로딩 이후에 나오는 화면에서 사용한다.
+*심리상담 탭을 클릭했을 때 리스트 형식으로 심리상담과 관련된 상담실을 화면에 보여준다.
+*
+*<b>Note:</b>
+* Fragment 를 상속받는다.
+* 추가할 상담실을 클래스 필드에 놓는다.
+* 리스트에 보여진 상담실을 클릭하면 해당 상담실의 상세정보창으로 이동한다.
+*
+* 코딩표준 작성자: 김동현
+* 2020-11-21
+* */
 public class Hearing extends Fragment {
 
-    private View view;
-    private LinearLayout dodream;
-    private LinearLayout sunflower;
-    private LinearLayout miso;
-    private LinearLayout jinju;
-    private LinearLayout toktok;
+    private View fView;
+    private LinearLayout fDodream;
+    private LinearLayout fSunflower;
+    private LinearLayout fMiso;
+    private LinearLayout fJinju;
+    private LinearLayout fToktok;
 
-
+    /*
+    * 해당 메소드는 심리상담 탭을 클릭했을 때,
+    * 리스트 형식으로 상담실을 보여준다.
+    *
+    * @param inflater: 해당 메소드를 실행했을 때, 어디에 화면을 띄울 것인지 알려준다.
+    * @param container: 상담실 리스트를 가지고 있다.
+    * @param savedInstanceState:
+    * @return fView: 상담실 리스트를 보여주는 View 를 리턴한다.
+    * */
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.hearing, container, false);
+        fView = inflater.inflate(R.layout.hearing, container, false);
 
-        dodream = view.findViewById(R.id.dodream);
+        fDodream = fView.findViewById(R.id.dodream);
 
-        dodream.setOnClickListener(new View.OnClickListener() {
+        fDodream.setOnClickListener(new View.OnClickListener() {
+            /*
+            * 해당 메소드는 특정 심리상담센터를 클릭했을 때,
+            * 해당 상담센터의 상세정보창으로 이동한다.
+            *
+            * @param v: 특정 상담센터이다.
+            * */
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
@@ -42,15 +67,12 @@ public class Hearing extends Fragment {
                 transaction.replace(R.id.aaaaa, dodream);
                 transaction.commit();
 
-
-
-
             }
         });
 
-        sunflower = view.findViewById(R.id.sunflower);
+        fSunflower = fView.findViewById(R.id.sunflower);
 
-        sunflower.setOnClickListener(new View.OnClickListener() {
+        fSunflower.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
@@ -62,16 +84,13 @@ public class Hearing extends Fragment {
                 transaction.replace(R.id.aaaaa, sunflower);
                 transaction.commit();
 
-
-
-
             }
         });
 
 
-        miso = view.findViewById(R.id.miso);
+        fMiso = fView.findViewById(R.id.miso);
 
-        miso.setOnClickListener(new View.OnClickListener() {
+        fMiso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
@@ -83,16 +102,13 @@ public class Hearing extends Fragment {
                 transaction.replace(R.id.aaaaa, miso);
                 transaction.commit();
 
-
-
-
             }
         });
 
 
-        jinju = view.findViewById(R.id.jinju);
+        fJinju = fView.findViewById(R.id.jinju);
 
-        jinju.setOnClickListener(new View.OnClickListener() {
+        fJinju.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
@@ -104,16 +120,13 @@ public class Hearing extends Fragment {
                 transaction.replace(R.id.aaaaa, jinju);
                 transaction.commit();
 
-
-
-
             }
         });
 
 
-        toktok = view.findViewById(R.id.toktok);
+        fToktok = fView.findViewById(R.id.toktok);
 
-        toktok.setOnClickListener(new View.OnClickListener() {
+        fToktok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
@@ -125,14 +138,9 @@ public class Hearing extends Fragment {
                 transaction.replace(R.id.aaaaa, toktok);
                 transaction.commit();
 
-
-
-
             }
         });
 
-
-
-        return view;
+        return fView;
     }
 }
