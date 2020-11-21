@@ -39,7 +39,7 @@ public class Hearing extends Fragment {
     *
     * @param inflater: 해당 메소드를 실행했을 때, 어디에 화면을 띄울 것인지 알려준다.
     * @param container: 상담실 리스트를 가지고 있다.
-    * @param savedInstanceState:
+    * @param savedInstanceState: 액티비티를 중단할 때 호출하여 임시적으로 데이터를 저장하는 변수
     * @return fView: 상담실 리스트를 보여주는 View 를 리턴한다.
     * */
     @Nullable
