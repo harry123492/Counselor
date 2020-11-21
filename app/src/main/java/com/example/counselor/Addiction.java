@@ -1,6 +1,5 @@
 package com.example.counselor;
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.app.FragmentManager;
 import android.content.Intent;
