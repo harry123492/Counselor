@@ -2,151 +2,226 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/dodream"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#ffffff">
-
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="50dp"
+        android:background="#2CB977"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/topicon"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:id="@+id/dodream"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="176dp"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/place_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="179dp"
-                        android:layout_marginTop="32dp"
-                        android:src="@drawable/dodream" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="25dp"
-                    android:layout_height="244dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="233dp"
-                    android:layout_marginTop="15dp"
-                    android:orientation="vertical">
-
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="162dp"
-                        android:src="@drawable/dodreammap" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="상담실주소: 진주시동부로169번길12 윙스타워a동1205호 (진주혁신도시윙스타워한일병원주변)"
-                        android:textSize="10dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:text="상담소 소개" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text=" 미소인상담센터는 지역내에 위치하고 있으며, 아동에서 성인까지 정서적 어려움을 동반하고 있는 사람들과 함께하고 있습니다." />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="상담자소개"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="- 교육심리학박사\n- 진주여성민우회부설성폭력상담소소장(2004.2 ~ 2007.6)\n- 전문상담사1급(한국상담학회)\n- 범죄심리사1급(한국심리학회)" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:text="전문영역 및 상담 프로그램" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="- 전문영역: 부부상담, 부모상담, 아동청소년상담, 법원이혼상담,\n                    4대폭력피해상담 등\n- 프로그램: 부모교육프로그램(ORPT, HPT, TAPT), 명상음악, \n                   집단상담프로그램, 청소년자기성장집단프로그램, \n                   가해자재비행방지프로그램, PAI 연수" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:text="가능한 심리검사" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="MMPI-A, MMPI-2, PAI-A, PAI-2 등" />
-            </LinearLayout>
+            android:gravity="right">
             <Button
                 android:id="@+id/menu_return"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="돌아가기"
-                android:textSize="15sp"/>
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/returnbutton"/>
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/place_1"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:src="@drawable/logo_dodream" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="두드림 심리상담센터"
+                android:textColor="#2F9D27"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text="진주시동부로169번길12 윙스타워a동1205호" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/info_bar"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:background="@drawable/border"
+                android:backgroundTint="#2CB977"
+                app:itemIconTint="#145537"
+                app:itemTextColor="#edfbe9"
+                app:layout_constraintEnd_toStartOf="@id/info_bar2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/info_bar" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/info_bar2"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:background="@drawable/border"
+                android:backgroundTint="#2CB977"
+                app:itemIconTint="#145537"
+                app:itemTextColor="#edfbe9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@id/info_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/info_bar2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:id="@+id/info_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:id="@+id/info_view"
+                android:background="#f7f7f7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/info_sogae"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="소개말"
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="두드림심리상담센터는 근로복지넷으로 연계한 근로자 지원상담, 정보화진흥원에서 지원하는 인터넷과 몰입중독 상담, 범죄피해자 지원상담 및 한국교원 교직원에서 지원하는 상담을 무료로 진행할 수 있으며 상담실에서 개인상담, 가족상담을 함께 진행할 수 있고 모래놀이 치료실을 갖추고 있습니다."
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/info_annae"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="상담자 소개"
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="20dp"
+                            android:text="- 가족상담박사수료\n- 진주건강가정지원센터전문상담위원\n- 전문상담사2급( 한국상담학회)\n- 정신보건전문상담사2급( 한국상담학회, 한국상담심리학회)" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/info_jeonmoon"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="전문영역 및 상담 프로그램" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="20dp"
+                            android:text="전문영역: 가족상담, 개인상담, 부모교육, 아동상담\n프로그램:인터넷중독상담, 중소기업진흥공단근로자상담, 지역사회서비스( 바우처사업), 범죄피해자지원사업, 성폭력피해자지원사업" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/info_ga"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="가능한 심리검사" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="20dp"
+                            android:text="MMPI-2, SCT, HTP, K-HTP, K-척도, S-척도, 우울검사, MBTI, 에니어그램등" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/info_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="상담소 위치" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/dodreammap"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
 </LinearLayout>
