@@ -2,144 +2,226 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/jinju"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#ffffff">
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="50dp"
+        android:background="#2CB977"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/topicon"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:id="@+id/jinju"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/place_1"
-                    android:layout_width="172dp"
-                    android:layout_height="124dp"
-                    android:layout_marginTop="46dp"
-                    android:src="@drawable/logo_jinjusimri" />
-
-                <TextView
-                    android:layout_width="25dp"
-                    android:layout_height="244dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="vertical">
-
-
-                    <ImageView
-                        android:layout_width="241dp"
-                        android:layout_height="167dp"
-                        android:src="@drawable/jinjusimrimap" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="10dp"
-                        android:text="상담실주소: 진주시강남로255번길8 1층" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:text="상담소 소개" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text=" 진주심리상담센터는 다양한 심리검사를 통해 인지,정서,행동적 측면을 살피고, 통합적 상담기법을 활용하여 심리상담 및 심리치료를 합니다. 답답한 마음, 혼자 묻어 두었던 상처, 견딜 수 없는 갈등, 내 아이의 진로적성과 미래에 대한 고민을 진주심리상담센터가 함께 하겠습니다." />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="상담자소개"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="- 문학치료학과졸업\n- 진주보건대학의학복지계열겸임교수(2004~2005)\n- 전문문학심리상담사(한국통합문학치료학회)\n- MBSR 전문가/ T급(한국명상학회)" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:text="전문영역 및 상담 프로그램" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="-전문영역: 아동상담, 부부상담\n-프로그램: 공감클래스, MBSR 기초교육, 문학심리상담사2급자격과정" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:text="가능한 심리검사" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="PAI성격평가, 에니어그램, 자존감검사, Beck 우울척도 등" />
-            </LinearLayout>
+            android:gravity="right">
             <Button
                 android:id="@+id/menu_return"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="돌아가기"
-                android:textSize="15sp"/>
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/returnbutton"/>
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/place_1"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:src="@drawable/logo_jinjusimri" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="진주 심리상담센터"
+                android:textColor="#2F9D27"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text="진주시 강남로 255번길8 1층" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/info_bar"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:background="@drawable/border"
+                android:backgroundTint="#2CB977"
+                app:itemIconTint="#145537"
+                app:itemTextColor="#edfbe9"
+                app:layout_constraintEnd_toStartOf="@id/info_bar2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/info_bar" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/info_bar2"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:background="@drawable/border"
+                android:backgroundTint="#2CB977"
+                app:itemIconTint="#145537"
+                app:itemTextColor="#edfbe9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@id/info_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/info_bar2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:id="@+id/info_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:id="@+id/info_view"
+                android:background="#f7f7f7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/info_sogae"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="소개말"
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="진주심리상담센터는 다양한 심리검사를 통해 인지,정서,행동적 측면을 살피고, 통합적 상담기법을 활용하여 심리상담 및 심리치료를 합니다. \n답답한 마음, 혼자 묻어 두었던 상처, 견딜 수 없는 갈등, 내 아이의 진로적성과 미래에 대한 고민을 진주심리상담센터가 함께 하겠습니다."
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/info_annae"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="상담자 소개"
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="20dp"
+                            android:text="- 문학치료학과졸업\n- 진주보건대학의학복지계열겸임교수(2004~2005)\n- 전문문학심리상담사(한국통합문학치료학회)\n- MBSR 전문가/ T급(한국명상학회)" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/info_jeonmoon"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="전문영역 및 상담 프로그램" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="20dp"
+                            android:text="전문영역: 아동상담, 부부상담\n프로그램 : 공감클래스, MBSR 기초교육, 문학심리상담사2급자격과정" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/info_ga"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="가능한 심리검사" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textSize="20dp"
+                            android:text="PAI성격평가, 에니어그램, 자존감검사, Beck 우울척도 등" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/info_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="25dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="상담소 위치" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/jinjusimrimap"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
 </LinearLayout>
