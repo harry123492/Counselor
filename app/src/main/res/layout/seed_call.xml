@@ -7,61 +7,61 @@
     android:layout_gravity="center"
     android:background="@drawable/calldialogshape">
     <ImageView
-        android:id="@+id/jinjucallimg"
+        android:id="@+id/seedcallimg"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:src="@drawable/logo_jinjusimri"/>
+        android:src="@drawable/logo_seedandtree"/>
     <TextView
-        android:id="@+id/jinjucallname"
+        android:id="@+id/seedcallname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="진주 심리상담센터"
+        android:text="씨앗과 나무"
         android:textSize="24dp"
         android:textStyle="bold"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:layout_below="@+id/jinjucallimg"/>
+        android:layout_below="@+id/seedcallimg"/>
     <TextView
-        android:id="@+id/jinjunum"
+        android:id="@+id/seednum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="전화번호 : 055-759-3590"
+        android:text="전화번호 : 055-759-7939"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:layout_below="@+id/jinjucallname"/>
+        android:layout_below="@+id/seedcallname"/>
     <TextView
-        android:id="@+id/jinjuemail"
+        android:id="@+id/seedemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="이메일 : jcc3590@naver.com"
+        android:text="이메일 : stella0478@hanmail.net"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:layout_below="@+id/jinjunum"/>
+        android:layout_below="@+id/seednum"/>
     <Button
-        android:id="@+id/jinjucall_btn"
+        android:id="@+id/seedcall_btn"
         android:text="전화하기"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/jinjuemail"
+        android:layout_below="@+id/seedemail"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/buttonshape"/>
     <Button
-        android:id="@+id/jinjucancel_btn"
+        android:id="@+id/seedcancel_btn"
         android:text="닫기"
         android:textColor="#000"
         android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/jinjuemail"
+        android:layout_below="@+id/seedemail"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"

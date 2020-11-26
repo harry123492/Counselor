@@ -7,61 +7,61 @@
     android:layout_gravity="center"
     android:background="@drawable/calldialogshape">
     <ImageView
-        android:id="@+id/jinjucallimg"
+        android:id="@+id/smokecallimg"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:src="@drawable/logo_jinjusimri"/>
+        android:src="@drawable/logo_smokecenter"/>
     <TextView
-        android:id="@+id/jinjucallname"
+        android:id="@+id/smokecallname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="진주 심리상담센터"
+        android:text="경남금연지원센터"
         android:textSize="24dp"
         android:textStyle="bold"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:layout_below="@+id/jinjucallimg"/>
+        android:layout_below="@+id/smokecallimg"/>
     <TextView
-        android:id="@+id/jinjunum"
+        android:id="@+id/smokenum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="전화번호 : 055-759-3590"
+        android:text="전화번호 : 055-759-9030"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:layout_below="@+id/jinjucallname"/>
+        android:layout_below="@+id/smokecallname"/>
     <TextView
-        android:id="@+id/jinjuemail"
+        android:id="@+id/smokeemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="이메일 : jcc3590@naver.com"
+        android:text="이메일 : knosmoking@hanmail.net"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:layout_below="@+id/jinjunum"/>
+        android:layout_below="@+id/smokenum"/>
     <Button
-        android:id="@+id/jinjucall_btn"
+        android:id="@+id/smokecall_btn"
         android:text="전화하기"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/jinjuemail"
+        android:layout_below="@+id/smokeemail"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/buttonshape"/>
     <Button
-        android:id="@+id/jinjucancel_btn"
+        android:id="@+id/smokecancel_btn"
         android:text="닫기"
         android:textColor="#000"
         android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/jinjuemail"
+        android:layout_below="@+id/smokeemail"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"

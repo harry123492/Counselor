@@ -97,15 +97,15 @@ public class Wee extends Fragment  {
     }
     public void ShowPopup(){
         TextView txtclose;
-        Button addictioncall_btn;
-        mDialog.setContentView(R.layout.addiction_call);
-        txtclose = (TextView) mDialog.findViewById(R.id.addictioncancel_btn);
-        addictioncall_btn = (Button) mDialog.findViewById(R.id.addictioncall_btn);
-        addictioncall_btn.setOnClickListener(new View.OnClickListener() {
+        Button call_btn;
+        mDialog.setContentView(R.layout.wee_call);
+        txtclose = (TextView) mDialog.findViewById(R.id.weecancel_btn);
+        call_btn = (Button) mDialog.findViewById(R.id.weecall_btn);
+        call_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent CallToAddiction = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:055-758-7801"));
-                startActivity(CallToAddiction);
+                Intent CallTo = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:055-740-2091"));
+                startActivity(CallTo);
             }
         });
         txtclose.setOnClickListener(new View.OnClickListener() {

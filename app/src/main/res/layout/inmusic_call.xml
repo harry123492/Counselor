@@ -7,61 +7,61 @@
     android:layout_gravity="center"
     android:background="@drawable/calldialogshape">
     <ImageView
-        android:id="@+id/jinjucallimg"
+        android:id="@+id/inmusiccallimg"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:src="@drawable/logo_jinjusimri"/>
+        android:src="@drawable/logo_inmusic"/>
     <TextView
-        android:id="@+id/jinjucallname"
+        android:id="@+id/inmusiccallname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="진주 심리상담센터"
+        android:text="인음악 심리상담센터"
         android:textSize="24dp"
         android:textStyle="bold"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:layout_below="@+id/jinjucallimg"/>
+        android:layout_below="@+id/inmusiccallimg"/>
     <TextView
-        android:id="@+id/jinjunum"
+        android:id="@+id/inmusicnum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="전화번호 : 055-759-3590"
+        android:text="전화번호 : 055-748-8589"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:layout_below="@+id/jinjucallname"/>
+        android:layout_below="@+id/inmusiccallname"/>
     <TextView
-        android:id="@+id/jinjuemail"
+        android:id="@+id/inmusicemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="이메일 : jcc3590@naver.com"
+        android:text="이메일 : arabia8589@hanmail.net"
         android:textColor="#000"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:layout_below="@+id/jinjunum"/>
+        android:layout_below="@+id/inmusicnum"/>
     <Button
-        android:id="@+id/jinjucall_btn"
+        android:id="@+id/inmusiccall_btn"
         android:text="전화하기"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/jinjuemail"
+        android:layout_below="@+id/inmusicemail"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/buttonshape"/>
     <Button
-        android:id="@+id/jinjucancel_btn"
+        android:id="@+id/inmusiccancel_btn"
         android:text="닫기"
         android:textColor="#000"
         android:textSize="12sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/jinjuemail"
+        android:layout_below="@+id/inmusicemail"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
