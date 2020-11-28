@@ -23,6 +23,7 @@ import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.matcher.ViewMatchers.withParentIndex;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.core.AllOf.allOf;
 
@@ -30,17 +31,16 @@ import static org.hamcrest.core.AllOf.allOf;
  * MainActivity 에서 BottomNavigationView 에 있는
  * MenuItem 중 하나를 클릭했을 때
  * setFrag 에 의해서 androidx.fragment.app.FragmentManager 에 FragmentManager 를 등록하고
- * FragmentTransaction 으로 해당 fragment(카테고리)에 맞게 Text(상담 분야) 를 변경한다.
+ * FragmentTransaction 으로 해당 fragment(카테고리)에 맞게 상담실 리스트를 불러온다.
+ * 이후 미소인 상담실을 클릭해서 미소인 상담실 상세정보창을 띄우는지 확인!
  *
- * before: "심리상담"
- * after: "중독상담"
 */
 
 @RunWith(AndroidJUnit4.class)
 @LargeTest
-public class ChangeListTest {
+public class ClickMisoTest {
 
-    private String ConsultationField;
+    private Hearing hearing;
 
     @Rule
     public ActivityTestRule<MainActivity> activityRule
@@ -48,17 +48,16 @@ public class ChangeListTest {
 
     @Before
     public void initValidString() {
-        ConsultationField = "심리상담";
         activityRule.getActivity();
+        hearing = new Hearing();
     }
 
     @Test
     public void changeText_sameActivity() {
-        onView(allOf(withId(R.id.test_field), withText("심리상담")));
-        onView(withId(R.id.bottommenu2)).perform(click());
+        activityRule.getActivity().setFrag(0);
+        onView(withId(R.id.miso)).perform(click());
 
-        // 클릭시 카테고리 변경 확인
-        onView(withId(R.id.test_field2)).check(matches(withText("중독상담")));
-
+        // 클릭시 미소인 상담실 상세정보창 확인
+        onView(withId(R.id.miso)).check(matches(withId(R.id.miso)));
     }
 }

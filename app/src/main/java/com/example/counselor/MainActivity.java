@@ -31,8 +31,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private BottomNavigationView bottomNavigationView;
     private BottomNavigationView bottomNavigationView2;
     private BottomNavigationView infoView;
-    private androidx.fragment.app.FragmentManager fm;
-    private FragmentTransaction ft;
+
     private Youth youth;
     private Hearing hearing;
     private Family family;
@@ -102,6 +101,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     // test 를 위해서 public 으로 변경해봄
     public void setFrag(int n) {
+        androidx.fragment.app.FragmentManager fm;
+        FragmentTransaction ft;
         fm = getSupportFragmentManager();
         ft = fm.beginTransaction();
 
