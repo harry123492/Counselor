@@ -100,7 +100,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapFragment.getMapAsync(this);
     }
 
-    private void setFrag(int n) {
+    // test 를 위해서 public 으로 변경해봄
+    public void setFrag(int n) {
         fm = getSupportFragmentManager();
         ft = fm.beginTransaction();
 
