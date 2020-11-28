@@ -87,7 +87,7 @@ public class Hearing extends Fragment {
         });
 
 
-        fMiso = fView.findViewById(R.id.miso);
+        fMiso = fView.findViewById(R.id.miso_list);
 
         fMiso.setOnClickListener(new View.OnClickListener() {
             @Override
