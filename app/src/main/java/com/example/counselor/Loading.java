@@ -8,7 +8,7 @@ import android.os.Handler;
 /*<h1>어플 로딩화면</h1>
 * Loading 프로그램은 어플을 실행하면 제일 첫번째로 나타나는 화면을 구현한다.
 * <b>참고:</b> 밑의 코드에서 postDelayed에서 3000은 3초를 의미하고 더 큰수를 넣으면 화면이 더 오래 보여진다.
-* 코딩표준 작성자: 이중길
+* @author 코딩표준 작성자: 이중길
 * @since 2020-11-21*/
 
 public class Loading extends AppCompatActivity {

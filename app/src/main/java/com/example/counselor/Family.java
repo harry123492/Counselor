@@ -27,7 +27,7 @@ public class Family extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.famaily, container, false);
 
-        dodream = view.findViewById(R.id.dodream);
+        dodream = view.findViewById(R.id.menuof_dodream);
 
         dodream.setOnClickListener(new View.OnClickListener() {
             @Override
