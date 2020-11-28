@@ -12,17 +12,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-/*<h1>심리상담 탭에 상담실 추가</h1>
+/*<h1>상담실 리스트의  클릭이벤트</h1>
 *로딩 이후에 나오는 화면에서 사용한다.
-*심리상담 탭을 클릭했을 때 리스트 형식으로 심리상담과 관련된 상담실을 화면에 보여준다.
+*심리 카테고리에서 특정 상담실을 클릭했을 때, 해당 상담실의 상세정보창을 보여준다.
 *
 *<b>Note:</b>
 * Fragment 를 상속받는다.
-* 추가할 상담실을 클래스 필드에 놓는다.
 * 리스트에 보여진 상담실을 클릭하면 해당 상담실의 상세정보창으로 이동한다.
 *
 * 코딩표준 작성자: 김동현
-* 2020-11-21
+* 2020-11-28
 * */
 public class Hearing extends Fragment {
 
