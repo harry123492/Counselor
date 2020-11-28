@@ -26,6 +26,7 @@ import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withParentIndex;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
@@ -45,9 +46,6 @@ import static org.hamcrest.core.AllOf.allOf;
 @LargeTest
 public class ClickMisoTest {
 
-    private Hearing hearing;
-    private ViewInteraction test;
-
     @Rule
     public ActivityTestRule<MainActivity> activityRule
             = new ActivityTestRule<>(MainActivity.class);
@@ -55,16 +53,14 @@ public class ClickMisoTest {
     @Before
     public void initValidString() {
         activityRule.getActivity();
-        hearing = new Hearing();
     }
 
     @Test
     public void changeText_sameActivity() {
         activityRule.getActivity().setFrag(0);
-//        onView(withId(R.id.miso_list)).perform(click());
-        test = onView(withText("미소인 상담센터")).perform(ViewActions.click());
+        onView(withId(R.id.miso_list)).perform(click());
 
         // 클릭시 미소인 상담실 상세정보창 확인
-        test.check(matches(withId(R.id.miso_result)));
+        onView(withId(R.id.miso_info)).check(matches(isDisplayed()));
     }
 }
