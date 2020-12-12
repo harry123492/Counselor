@@ -66,10 +66,10 @@ public class Smoke extends Fragment  {
                         scrollView.scrollTo(0, 0);
                         break;
                     case R.id.action_second:
-                        scrollView.scrollTo(0, 1200);
+                        scrollView.scrollTo(0, 1575);
                         break;
                     case R.id.action_third:
-                        scrollView.scrollTo(0, 2400);
+                        scrollView.scrollTo(0, 3150);
                         break;
                 }
                 return false;
@@ -80,10 +80,10 @@ public class Smoke extends Fragment  {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.action_four:
-                        scrollView.scrollTo(0, 3600);
+                        scrollView.scrollTo(0, 4725);
                         break;
                     case R.id.action_five:
-                        scrollView.scrollTo(0, 4800);
+                        scrollView.scrollTo(0, 6300);
                         break;
                     case R.id.action_six:
                         ShowPopup();
