@@ -164,15 +164,15 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         MarkerOptions markerOptions11 = new MarkerOptions();
 
         markerOptions.title("경남금연지원센터");
-        markerOptions.snippet("경상남도진주시주약동407-9 2층");
+        markerOptions.snippet("경상남도진주시주약동407-9, 2층");
         markerOptions2.title("경남 서부 해바라기센터");
         markerOptions2.snippet("경상남도진주시칠암동90");
         markerOptions3.title("두드림 심리상담센터");
         markerOptions3.snippet("진주시동부로169번길12 윙스타워a동1205호");
         markerOptions4.title("미소인 상담센터");
-        markerOptions4.snippet("진주시진양호로341 2층");
+        markerOptions4.snippet("진주시진양호로341, 2층");
         markerOptions5.title("씨앗과 나무");
-        markerOptions5.snippet("진주시개양로6번길24 3층");
+        markerOptions5.snippet("진주시개양로6번길24, 3층");
         markerOptions6.title("인음악 심리상담센터");
         markerOptions6.snippet("진주시평거로26번길5-12");
         markerOptions7.title("진주시 건강가정 지원센터");
@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         markerOptions8.title("진주 교육지원청 Wee센터");
         markerOptions8.snippet("진주시비봉로23번길8 (중안동)");
         markerOptions9.title("진주 심리상담센터");
-        markerOptions9.snippet("35.1878638,128.089226");
+        markerOptions9.snippet("진주시 강남로 255번길 8, 1층");
         markerOptions10.title("진주 중독관리 통합지원센터");
         markerOptions10.snippet("진주시주약동407-9");
         markerOptions11.title("톡톡 심리상담센터");
