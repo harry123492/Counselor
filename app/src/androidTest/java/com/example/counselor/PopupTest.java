@@ -29,15 +29,6 @@ import static androidx.test.espresso.matcher.ViewMatchers.withParentIndex;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.core.AllOf.allOf;
 
-/**
- * MainActivity 에서 BottomNavigationView 에 있는
- * MenuItem 중 하나를 클릭했을 때
- * setFrag 에 의해서 androidx.fragment.app.FragmentManager 에 FragmentManager 를 등록하고
- * FragmentTransaction 으로 해당 fragment(카테고리)에 맞게 상담실 리스트를 불러온다.
- * 이후 미소인 상담실을 클릭해서 미소인 상담실 상세정보창을 띄우는지 확인!
- *
- */
-
 @RunWith(AndroidJUnit4.class)
 @LargeTest
 public class PopupTest {

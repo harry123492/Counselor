@@ -17,7 +17,7 @@
         android:id="@+id/toktokcallname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="경남 서부 해바라기센터"
+        android:text="톡톡 심리상담센터"
         android:textSize="24dp"
         android:textStyle="bold"
         android:textColor="#000"
